@@ -1,0 +1,48 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php artisan *)",
+      "Bash(ls -la /c/xampp/htdocs/tjd/routes/)",
+      "Read(//c/xampp/htdocs/tjd/routes//**)",
+      "Bash(ls -la /c/xampp/htdocs/tjd/database/migrations/ | head -20)",
+      "Read(//c/xampp/htdocs/tjd/database/migrations//**)",
+      "Bash(ls -la /c/xampp/htdocs/tjd/resources/views/ | grep -i pauta)",
+      "Read(//c/xampp/htdocs/tjd/resources/views//**)",
+      "Bash(mkdir -p /c/xampp/htdocs/tjd/resources/views/admin/pautas)",
+      "Bash(curl -s http://localhost:8000/pauta)",
+      "Bash(cat)",
+      "Bash(php /tmp/test_pauta.php)",
+      "Bash(php -r \"echo 'PHP works'; echo PHP_EOL;\")",
+      "Bash(curl -s http://localhost:8000/)",
+      "Bash(curl -s -c /tmp/cookies.txt http://localhost:8000/login)",
+      "Bash(curl -s -H \"Cookie: $\\(curl -s -c /tmp/cookies.txt http://localhost:8000/login)",
+      "Bash(awk '{print $2, $3, $4}')",
+      "Bash(curl -s http://localhost:8000/admin/pautas/criar)",
+      "Bash(curl -s -w \"\\\\nStatus: %{http_code}\\\\n\" http://localhost:8000/admin/pautas/criar)",
+      "Bash(curl -s -w \"\\\\nStatus: %{http_code}\\\\n\" http://localhost:8000/admin/pautas)",
+      "Bash(php -l /c/xampp/htdocs/tjd/resources/views/admin/pautas/form.blade.php)",
+      "Bash(dir \"c:\\\\xampp\\\\htdocs\\\\tjd\" /b)",
+      "Bash(Start-Sleep -Milliseconds 2000)",
+      "Bash(curl -s http://127.0.0.1:8000/decisoes)",
+      "Bash(Get-ChildItem -Path \"c:\\\\xampp\\\\htdocs\\\\tjd\" -Depth 2)",
+      "Bash(Select-Object Name, FullName, PSIsContainer)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(curl -s http://127.0.0.1:8000/)",
+      "Bash(curl -s http://127.0.0.1:8000/noticias)",
+      "Bash(curl -s http://127.0.0.1:8000/noticias/1)",
+      "Bash(grep -n \"mainnav\" \"c:\\\\\\\\xampp\\\\\\\\htdocs\\\\\\\\tjd\\\\\\\\public\\\\\\\\css\\\\\\\\styles.css\")",
+      "Bash(curl -s http://127.0.0.1:8000)",
+      "Bash(grep -A 5 \"nav-separator\" \"c:\\\\\\\\xampp\\\\\\\\htdocs\\\\\\\\tjd\\\\\\\\resources\\\\\\\\views\\\\\\\\layouts\\\\\\\\app.blade.php\")",
+      "Bash(curl -I http://127.0.0.1:8000/favicon.png)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:8000/favicon.png)",
+      "Bash(grep -r \"@vite\\\\|@assets\" \"c:\\\\\\\\xampp\\\\\\\\htdocs\\\\\\\\tjd\\\\\\\\resources\\\\\\\\views\")",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git remote *)",
+      "Bash(git add *)"
+    ],
+    "additionalDirectories": [
+      "C:\\xampp\\htdocs\\tjd\\resources\\views\\admin"
+    ]
+  }
+}
