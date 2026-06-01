@@ -303,4 +303,8 @@ table.data tbody tr:hover{background:var(--surface-2);}
   .footer-grid{grid-template-columns:1fr;}
   .brandmark .titles h1{font-size:1.1rem;}
   .brandmark img{height:52px;}
+  .topstrip .wrap{flex-direction:column;align-items:flex-start;height:auto;gap:6px;padding-top:8px;padding-bottom:8px;}
+  .topstrip .org{align-items:flex-start;line-height:1.35;}
+  .topstrip .org .dot{flex:0 0 auto;margin-top:6px;}
+  .topstrip .links{gap:14px;}
 }

@@ -13,6 +13,26 @@ class ProcessoSeeder extends Seeder
 {
     public function run(): void
     {
+        // PROTEÇÃO: este seeder APAGA todos os processos e insere dados de
+        // demonstração. Em produção isso destruiria os processos reais do
+        // Tribunal.
+        //
+        // Salvaguarda 1: nunca destruir dados existentes. Se já houver
+        // qualquer processo cadastrado, aborta — protege os dados reais
+        // mesmo que o APP_ENV esteja rotulado incorretamente.
+        if (Processo::query()->exists()) {
+            $this->command?->warn('ProcessoSeeder ignorado: já existem processos cadastrados (dados reais preservados).');
+
+            return;
+        }
+
+        // Salvaguarda 2: dados de demonstração só em ambiente local.
+        if (! app()->environment('local')) {
+            $this->command?->warn('ProcessoSeeder ignorado: dados de demonstração só são inseridos em ambiente local.');
+
+            return;
+        }
+
         // Evita duplicar se rodar o seeder mais de uma vez.
         Processo::query()->delete();
 
