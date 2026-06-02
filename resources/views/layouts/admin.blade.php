@@ -61,6 +61,9 @@
                 @can('admin')
                     <a href="{{ route('admin.usuarios.index') }}" class="@if(request()->routeIs('admin.usuarios.*')) active @endif">Usuários</a>
                 @endcan
+                @can('super_admin')
+                    <a href="{{ route('admin.analytics.index') }}" class="@if(request()->routeIs('admin.analytics.*')) active @endif">Analytics</a>
+                @endcan
             </div>
         </div>
     </nav>
@@ -91,5 +94,6 @@
     </script>
 
     @vite(['resources/js/app.js'])
+    @yield('scripts')
 </body>
 </html>

@@ -5,6 +5,7 @@ use App\Http\Controllers\PautaController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\DocumentoController;
 use App\Http\Controllers\NoticiaController;
+use App\Http\Controllers\AnalyticsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -54,6 +55,10 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     Route::resource('usuarios', UsuarioController::class)
         ->only(['index', 'create', 'store', 'edit', 'update', 'destroy'])
         ->names('usuarios');
+
+    // Painel de Analytics e Monitoramento de Segurança (somente super_admin).
+    Route::get('analytics', [AnalyticsController::class, 'index'])
+        ->middleware('can:super_admin')->name('analytics.index');
 
     Route::get('noticias',                   [NoticiaController::class, 'adminIndex'])->name('noticias.index');
     Route::get('noticias/criar',             [NoticiaController::class, 'create'])->name('noticias.create');
