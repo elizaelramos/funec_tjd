@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('title', 'Inserir Resultados — ' . $pauta->numero . ' — TJD · FUNEC')
 

@@ -72,16 +72,8 @@
                     <!-- SEPARADOR -->
                     <div class="nav-separator"></div>
 
-                    <!-- LABEL ADMIN -->
-                    <span class="nav-admin-label">ADMIN</span>
-
-                    <!-- MENU ADMIN -->
-                    <a href="{{ route('admin.processos.index') }}" class="nav-admin-link @if(($active ?? null) === 'processos') active @endif">Processos</a>
-                    <a href="{{ route('admin.pautas.index') }}" class="nav-admin-link @if(($active ?? null) === 'pautas') active @endif">Pautas</a>
-                    <a href="{{ route('admin.noticias.index') }}" class="nav-admin-link @if(($active ?? null) === 'noticias') active @endif">Notícias</a>
-                    @can('admin')
-                      <a href="{{ route('admin.usuarios.index') }}" class="nav-admin-link @if(($active ?? null) === 'usuarios') active @endif">Usuários</a>
-                    @endcan
+                    <!-- ACESSO AO PAINEL ADMINISTRATIVO -->
+                    <a href="{{ route('admin.processos.index') }}" class="nav-admin-link">Painel administrativo</a>
                 @endauth
             </div>
         </div>

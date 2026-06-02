@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @php
   $status_options = \App\Http\Controllers\NoticiaController::STATUS;
