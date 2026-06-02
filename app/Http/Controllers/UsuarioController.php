@@ -89,7 +89,9 @@ class UsuarioController extends Controller
             abort(403, 'Apenas Super Admin pode atribuir o nível Super Admin.');
         }
 
-        if (isset($dados['password']) && $dados['password'] === null) {
+        // Senha em branco no formulário => mantém a senha atual.
+        // (isset() é false para null, por isso usamos empty() aqui.)
+        if (empty($dados['password'])) {
             unset($dados['password']);
         }
 
