@@ -63,8 +63,8 @@
     <div class="intro-note">
       <span class="seal"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M5 3h9l5 5v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M8 13h8M8 17h5"/></svg></span>
       <div>
-        <h3>Portaria FUNEC nº 012, de 22 de abril de 2026</h3>
-        <p>Dispõe sobre a nomeação dos membros para a composição do Tribunal de Justiça Desportiva da Fundação de Esportes de Corumbá — FUNEC, nos termos da Lei Complementar nº 287/2021 e da Portaria FUNEC nº 004/2021.</p>
+        <h3>Portaria FUNEC nº 015, de 01 de junho de 2026</h3>
+        <p>Dispõe sobre a substituição de membros da composição do Tribunal de Justiça Desportiva da Fundação de Esportes de Corumbá — FUNEC, nos termos da Lei Complementar nº 287/2021 e da Portaria FUNEC nº 004/2021, alterando a Portaria FUNEC nº 012/2026.</p>
       </div>
       <a class="btn btn-ghost" href="#">Ver portaria (PDF)</a>
     </div>
@@ -84,9 +84,9 @@
     <hr class="rule" style="margin-top:18px;">
     <div class="member-grid">
       <div class="member featured">
-        <span class="av">SR</span>
+        <span class="av">HJ</span>
         <div>
-          <div class="nm">Shirley Monterisi Ribeiro</div>
+          <div class="nm">Heliney Miranda Junior</div>
           <div class="ro"><span class="role-tag role-pres">Presidente</span></div>
           <p class="lead">Preside as sessões do Pleno e representa o Tribunal.</p>
         </div>
@@ -102,8 +102,8 @@
         <div class="ro"><span class="role-tag role-sec">Secretário-Geral</span></div>
       </div>
       <div class="member">
-        <span class="av">HJ</span>
-        <div class="nm">Heliney de Miranda Junior</div>
+        <span class="av">JR</span>
+        <div class="nm">João Luiz Ribeiro</div>
         <div class="ro"><span class="role-tag">Auditor</span></div>
       </div>
       <div class="member">
@@ -153,11 +153,6 @@
         </div>
       </div>
       <div class="member">
-        <span class="av">WP</span>
-        <div class="nm">Wagner Alves Pereira</div>
-        <div class="ro"><span class="role-tag role-sec">Secretário</span></div>
-      </div>
-      <div class="member">
         <span class="av">BM</span>
         <div class="nm">Bruno Felipe Garcia Martinez</div>
         <div class="ro"><span class="role-tag">Auditor</span></div>
@@ -165,11 +160,6 @@
       <div class="member">
         <span class="av">CS</span>
         <div class="nm">Carlos Henrique de Siqueira</div>
-        <div class="ro"><span class="role-tag">Auditor</span></div>
-      </div>
-      <div class="member">
-        <span class="av">JR</span>
-        <div class="nm">João Luiz Ribeiro</div>
         <div class="ro"><span class="role-tag">Auditor</span></div>
       </div>
       <div class="member">
@@ -188,7 +178,7 @@
         <div class="ro"><span class="role-tag">Auditor</span></div>
       </div>
     </div>
-    <p class="muted" style="margin-top:26px;font-size:.86rem;max-width:80ch;">A designação para compor a Comissão Disciplinar e o Pleno do TJD da FUNEC não implica remuneração aos seus membros, sendo a prestação de serviços considerada serviço público relevante (Art. 4º, Portaria FUNEC nº 012/2026).</p>
+    <p class="muted" style="margin-top:26px;font-size:.86rem;max-width:80ch;">A designação para compor a Comissão Disciplinar e o Pleno do TJD da FUNEC não implica remuneração aos seus membros, sendo a prestação de serviços considerada serviço público relevante (Art. 3º, Portaria FUNEC nº 015/2026).</p>
   </div>
 </section>
 @endsection
