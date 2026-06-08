@@ -160,16 +160,43 @@ class ProcessoController extends Controller
         ]);
     }
 
+    /**
+     * Nível (1 a 4) de cada situação no fluxo do processo.
+     * Alimenta a barra de progresso e as abas da tela de gestão.
+     */
+    public const NIVEL_POR_SITUACAO = [
+        'aguardando_citacao'       => 1,
+        'aguardando_agendamento'   => 2,
+        'agendado'                 => 2,
+        'julgado_periodo_recurso'  => 3,
+        'recurso_aceito'           => 4,
+        'julgado'                  => 4,
+        'arquivado'                => 4,
+    ];
+
     /** Detalhe admin — /admin/processos/{processo} */
     public function adminShow(Processo $processo)
     {
         $this->authorize('editor');
+
+        $etapas = [
+            ['chave' => 'processo',   'rotulo' => 'Processo'],
+            ['chave' => 'citacao',    'rotulo' => 'Citação'],
+            ['chave' => 'julgamento', 'rotulo' => 'Julgamento'],
+            ['chave' => 'recurso',    'rotulo' => 'Recurso'],
+        ];
+        $nivel = self::NIVEL_POR_SITUACAO[$processo->situacao] ?? 1;
 
         return view('admin.processos.show', [
             'active'      => 'processos',
             'processo'    => $processo->load('documentos', 'pautas'),
             'situacoes'   => self::SITUACOES,
             'tiposDoc'    => ['origem', 'citacao', 'recurso', 'decisao_recurso'],
+            'progresso'   => [
+                'etapas'     => $etapas,
+                'nivel'      => $nivel,
+                'percentual' => (int) round($nivel / count($etapas) * 100),
+            ],
         ]);
     }
 
